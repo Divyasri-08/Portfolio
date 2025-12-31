@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Divya Sri Munnangi | Portfolio</title>
+    <meta name="description" content="Portfolio of Divya Sri Munnangi — Data Scientist & ML Engineer" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Background accents -->
+    <div class="bg-orb orb-1" aria-hidden="true"></div>
+    <div class="bg-orb orb-2" aria-hidden="true"></div>
+    <div class="bg-orb orb-3" aria-hidden="true"></div>
+
+    <!-- Navbar -->
+    <header class="nav">
+      <a class="brand" href="#top">
+        <span class="brand-badge">DS</span>
+        <span class="brand-text">Divya Sri</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="navLinks" class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a class="btn btn-sm" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <main id="top" class="container">
+      <section class="hero">
+        <div class="hero-left">
+          <div class="pill">
+            <span class="dot"></span>
+            Open to Internships • Data / ML / GenAI
+          </div>
+
+          <h1>
+            Data Scientist & <span class="grad">ML Engineer</span><br />
+            building real-world AI products.
+          </h1>
+
+          <p class="sub">
+            I work with <b>Python, SQL, ML/DL, and cloud</b> to turn messy data into useful systems — from
+            <b>RAG-based assistants</b> to <b>fraud detection with GNNs</b>.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn btn-ghost" href="#contact">Hire / Collaborate</a>
+          </div>
+
+          <div class="mini-cards">
+            <div class="mini-card">
+              <div class="mini-title">Focus</div>
+              <div class="mini-value">AI • ML • NLP • Analytics</div>
+            </div>
+            <div class="mini-card">
+              <div class="mini-title">Location</div>
+              <div class="mini-value">Arlington, TX</div>
+            </div>
+            <div class="mini-card">
+              <div class="mini-title">Stack</div>
+              <div class="mini-value">Python • SQL • PyTorch • AWS</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="profile-card">
+            <div class="profile-top">
+              <div class="avatar" aria-label="Profile photo placeholder">
+                <!-- Optional: Replace with your image -->
+                <!-- <img src="assets/profile.jpg" alt="Divya Sri Munnangi" /> -->
+                <span>DSM</span>
+              </div>
+              <div>
+                <div class="name">Divya Sri Munnangi</div>
+                <div class="role">Master’s in Data Science • UTA</div>
+              </div>
+            </div>
+
+            <div class="profile-links">
+              <a class="chip" href="mailto:munnangidivyasree@gmail.com">Email</a>
+              <a class="chip" href="https://www.linkedin.com/in/divya-sri-munnangi-795b70214/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="chip" href="#" onclick="alert('Add your GitHub link here!'); return false;">GitHub</a>
+            </div>
+
+            <div class="profile-stats">
+              <div class="stat">
+                <div class="stat-k">Projects</div>
+                <div class="stat-v">6+</div>
+              </div>
+              <div class="stat">
+                <div class="stat-k">Domains</div>
+                <div class="stat-v">NLP • Vision • Graphs</div>
+              </div>
+              <div class="stat">
+                <div class="stat-k">Tools</div>
+                <div class="stat-v">Tableau • Power BI</div>
+              </div>
+            </div>
+
+            <div class="profile-note">
+              <b>What I love:</b> building end-to-end systems — data → model → evaluation → dashboard / app.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section">
+        <div class="section-head">
+          <h2>Featured Projects</h2>
+          <p>Some of my recent work across ML, deep learning, and GenAI.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card">
+            <div class="tag tag-ai">GenAI • RAG</div>
+            <h3>Legal Document Review Assistant</h3>
+            <p>
+              Built a regulatory assistant using document embeddings + vector retrieval to answer EU AI law questions with grounded context.
+            </p>
+            <div class="card-meta">
+              <span>LLM • Embeddings</span><span>Vector DB</span><span>NLP</span>
+            </div>
+            <div class="card-actions">
+              <a class="link" href="#" onclick="alert('Add repo/demo link'); return false;">Repo</a>
+              <a class="link" href="#" onclick="alert('Add live demo link'); return false;">Demo</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="tag tag-ml">Graph ML</div>
+            <h3>Financial Fraud Detection using GNN</h3>
+            <p>
+              Modeled transactions as a graph (cards, merchants, devices) and trained a GNN classifier to improve fraud recall at fixed FPR.
+            </p>
+            <div class="card-meta">
+              <span>PyTorch Geometric</span><span>Graph Features</span><span>Explainability</span>
+            </div>
+            <div class="card-actions">
+              <a class="link" href="#" onclick="alert('Add repo/demo link'); return false;">Repo</a>
+              <a class="link" href="#" onclick="alert('Add report link'); return false;">Report</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="tag tag-cv">Computer Vision</div>
+            <h3>Breast Cancer Detection (VGG16)</h3>
+            <p>
+              Applied transfer learning with VGG16 for malignant vs benign classification, using augmentation and fine-tuning for generalization.
+            </p>
+            <div class="card-meta">
+              <span>TensorFlow</span><span>Transfer Learning</span><span>Medical AI</span>
+            </div>
+            <div class="card-actions">
+              <a class="link" href="#" onclick="alert('Add repo/demo link'); return false;">Repo</a>
+              <a class="link" href="#" onclick="alert('Add results link'); return false;">Results</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="tag tag-data">Analytics</div>
+            <h3>Time Series Forecasting</h3>
+            <p>
+              Analyzed trends, seasonality, and anomalies; built ARIMA + Prophet models and tuned parameters using diagnostics for better forecasts.
+            </p>
+            <div class="card-meta">
+              <span>ARIMA</span><span>Prophet</span><span>Python/R</span>
+            </div>
+            <div class="card-actions">
+              <a class="link" href="#" onclick="alert('Add repo/demo link'); return false;">Repo</a>
+              <a class="link" href="#" onclick="alert('Add notebook link'); return false;">Notebook</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="tag tag-ml">ML • Regression</div>
+            <h3>Predicting Social Media Followers</h3>
+            <p>
+              Built regression models using trait & behavioral features; performed EDA, correlation study, and feature engineering to boost accuracy.
+            </p>
+            <div class="card-meta">
+              <span>Feature Engineering</span><span>EDA</span><span>Model Tuning</span>
+            </div>
+            <div class="card-actions">
+              <a class="link" href="#" onclick="alert('Add repo/demo link'); return false;">Repo</a>
+              <a class="link" href="#" onclick="alert('Add dashboard link'); return false;">Dashboard</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="tag tag-ai">AI Product</div>
+            <h3>Fitness Tracker with AI Integration</h3>
+            <p>
+              Designed a fitness app that uses wearable data + predictive analytics to generate personalized workouts and health trend insights.
+            </p>
+            <div class="card-meta">
+              <span>Predictive Analytics</span><span>Wearables</span><span>Recommendations</span>
+            </div>
+            <div class="card-actions">
+              <a class="link" href="#" onclick="alert('Add repo/demo link'); return false;">Repo</a>
+              <a class="link" href="#" onclick="alert('Add demo link'); return false;">Demo</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <p>A compact overview of what I use to build and ship.</p>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card soft">
+            <h3>Core</h3>
+            <div class="skills">
+              <span class="skill">Python</span>
+              <span class="skill">SQL</span>
+              <span class="skill">R</span>
+              <span class="skill">Data Analysis</span>
+              <span class="skill">Feature Engineering</span>
+              <span class="skill">Model Evaluation</span>
+            </div>
+          </div>
+
+          <div class="card soft">
+            <h3>ML / DL</h3>
+            <div class="skills">
+              <span class="skill">Scikit-learn</span>
+              <span class="skill">PyTorch</span>
+              <span class="skill">TensorFlow</span>
+              <span class="skill">Keras</span>
+              <span class="skill">XGBoost</span>
+              <span class="skill">LightGBM</span>
+              <span class="skill">CNNs</span>
+              <span class="skill">RNNs</span>
+              <span class="skill">GNNs</span>
+            </div>
+          </div>
+
+          <div class="card soft">
+            <h3>Cloud & Data</h3>
+            <div class="skills">
+              <span class="skill">AWS (EC2, S3)</span>
+              <span class="skill">GCP (BigQuery)</span>
+              <span class="skill">Azure Fundamentals</span>
+              <span class="skill">PostgreSQL</span>
+              <span class="skill">MySQL</span>
+              <span class="skill">MongoDB</span>
+            </div>
+          </div>
+
+          <div class="card soft">
+            <h3>Visualization & Web</h3>
+            <div class="skills">
+              <span class="skill">Tableau</span>
+              <span class="skill">Power BI</span>
+              <span class="skill">Excel</span>
+              <span class="skill">HTML</span>
+              <span class="skill">CSS</span>
+              <span class="skill">JavaScript</span>
+              <span class="skill">React</span>
+              <span class="skill">Flask</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience / Highlights -->
+      <section id="experience" class="section">
+        <div class="section-head">
+          <h2>Highlights</h2>
+          <p>Short, recruiter-friendly bullets.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-content card">
+              <h3>GenAI Assistant (RAG)</h3>
+              <ul>
+                <li>Created an embedding + retrieval pipeline to answer regulation questions with context grounding.</li>
+                <li>Designed chunking + query flow to improve relevance and response quality.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-content card">
+              <h3>Fraud Detection with Graph Neural Networks</h3>
+              <ul>
+                <li>Built a transaction graph and trained a GNN classifier for improved fraud recall.</li>
+                <li>Added interpretability signals by analyzing node/edge importance.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-content card">
+              <h3>Time Series Forecasting</h3>
+              <ul>
+                <li>Detected seasonality and anomalies; forecasted future values using ARIMA and Prophet.</li>
+                <li>Tuned parameters and validated results with statistical diagnostics.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="section">
+        <div class="section-head">
+          <h2>Education</h2>
+          <p>University of Texas at Arlington (UTA)</p>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>Master’s in Data Science</h3>
+            <p class="muted">Jan 2024 – Dec 2025 • GPA: 3.60 / 4.00</p>
+            <div class="card-meta">
+              <span>Machine Learning</span><span>Deep Learning</span><span>Data Engineering</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Certifications</h3>
+            <ul class="list">
+              <li>SQL for Data Science (LinkedIn Learning)</li>
+              <li>AWS Data Engineer (AWS Certification)</li>
+              <li>Data Science Professional (KNIME)</li>
+              <li>Career Essentials in Data Analysis (Microsoft & LinkedIn)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>Want to work together? Send a message.</p>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>Reach me</h3>
+            <p class="muted">
+              Email is the fastest. Add your GitHub + portfolio links anytime.
+            </p>
+            <div class="contact-cards">
+              <a class="contact-card" href="mailto:munnangidivyasree@gmail.com">
+                <span class="cc-title">Email</span>
+                <span class="cc-value">munnangidivyasree@gmail.com</span>
+              </a>
+              <a class="contact-card" href="tel:+19405001948">
+                <span class="cc-title">Phone</span>
+                <span class="cc-value">+1 (940) 500-1948</span>
+              </a>
+              <a class="contact-card" href="https://www.linkedin.com/in/divya-sri-munnangi-795b70214/" target="_blank" rel="noreferrer">
+                <span class="cc-title">LinkedIn</span>
+                <span class="cc-value">divya-sri-munnangi</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Quick message (optional)</h3>
+            <form class="form" onsubmit="event.preventDefault(); alert('This is a static site. Use the email button to contact!');">
+              <label>
+                Your Name
+                <input type="text" placeholder="Enter your name" required />
+              </label>
+              <label>
+                Your Email
+                <input type="email" placeholder="Enter your email" required />
+              </label>
+              <label>
+                Message
+                <textarea rows="5" placeholder="Write your message..." required></textarea>
+              </label>
+              <button class="btn" type="submit">Send</button>
+              <p class="muted small">
+                (GitHub Pages is static, so this form doesn’t send. Use Email/LinkedIn above.)
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div>© <span id="year"></span> Divya Sri Munnangi</div>
+        <div class="footer-links">
+          <a href="#top">Back to top ↑</a>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      // Mobile nav toggle
+      const btn = document.querySelector(".nav-toggle");
+      const links = document.getElementById("navLinks");
+      btn?.addEventListener("click", () => {
+        const isOpen = links.classList.toggle("open");
+        btn.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      // Current year
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
